@@ -1,0 +1,642 @@
+<app-dashboard-header></app-dashboard-header>
+
+
+<div class="main-content">
+  <div class="container-fluid" >
+  <div style="margin-top:5px;">
+  <form>
+   
+  
+      <div class="row"> <div class="col-lg-2 col-md-4 col-sm-6"></div>
+      <div class="col-lg-8 col-md-6 col-sm-6"><mat-card style="background-color: #1e1d39;">
+            
+    <div class="row">
+        <div class="col-lg-12 col-md-12" style="overflow: auto;height:500px;">
+            <div class="card" style="background-color: #1e1d39;">
+                <div class="card-header card-header-tabs card-header-primary">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <span class="nav-tabs-title">Employee Data <button mat-fab color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon>supervisor_account</mat-icon>
+                              </button></span>
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                <li class="nav-item">
+                                    <a mat-button class="nav-link " [ngClass]="{'active': id === '1'}"
+                                    href="#profile" data-toggle="tab">
+                                        <mat-icon>folder_shared</mat-icon> Personal Info
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a mat-button class="nav-link " [ngClass]="{'active': id === '2'}" href="#messages" data-toggle="tab">
+                                        <mat-icon> table_chart</mat-icon> Payment Components
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a mat-button class="nav-link" [ngClass]="{'active': id === '3'}" href="#settings" data-toggle="tab">
+                                        <mat-icon>account_balance</mat-icon> Bank Data
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a mat-button class="nav-link" [ngClass]="{'active': id === '4'}" href="#job" data-toggle="tab">
+                                    <mat-icon>work</mat-icon> Job Detail
+                                      <div class="ripple-container"></div>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a mat-button class="nav-link" href="#master" data-toggle="tab">
+                                      <i class="material-icons">cloud</i> Id Master
+                                      <div class="ripple-container"></div>
+                                  </a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane" [ngClass]="{'active': id === '1'}" id="profile">
+                            <div class="row"  style="overflow: auto;
+                            ">
+                                <div class="col-md-12">
+                                    <div class="card card-chart">
+                                        <div class="card-header card-header-success" style="background-color: lightgrey">
+                                            
+                                            <button mat-fab color="primary" a routerLink="/personaldata" aria-label="Example icon button with a home icon">
+                                                <mat-icon>add</mat-icon>
+                                              </button>
+                                            <div class="ct-chart" id="dailySalesChart"></div>
+                                        </div>
+                                        <div class="card-body" style="background-color:#1e1d39">
+                                            <h4 class="card-title"><span class="text-success">Personal Data</span></h4>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Date of Birth : 21-Sept-1993</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Nationality : Indian</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span>Contact No : 984351470</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Blood Group : B+ve</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Marital-status : single</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent C/O Name : Eason</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <mat-divider></mat-divider>
+                                            <br>
+                                            <div class = "row">
+                                                
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success">Permanent Address</span> </p>
+                                                       
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="row">
+                                               
+                                                <div class="col-md-6">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent Address1 : Austin Street, DHL Road</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent Address2 : Flat No 27, East Street</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                            <div class="row">
+                                               
+                                                <div class="col-md-6">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent Address3 : Flat No 27, East Street</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent State : Karnataka</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                            <div class="row">
+                                               
+                                                <div class="col-md-6">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent City : Bangalore</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Permanent PIN Code : 421500</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                               
+                                                <div class="col-md-4">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Father's Name : Steve</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Mother's Name : Lily Steve</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Number of children : 2</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="card-footer" style="background-color:#c2185B">
+                                            <div class="stats">
+                                                <i class="material-icons">access_time</i> updated 4 minutes ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" [ngClass]="{'active': id === '2'}" id="messages">
+                            <div class="row"  style="overflow: auto;
+                            ">
+                                <div class="col-md-12">
+                                    <div class="card card-chart">
+                                        <div class="card-header card-header-success" style="background-color: lightgrey">
+                                            <button mat-fab color="primary" a routerLink="/personaldata" aria-label="Example icon button with a home icon">
+                                                <mat-icon>add</mat-icon>
+                                              </button>
+                                            <div class="ct-chart" id="dailySalesChart"></div>
+                                        </div>
+                                        <div class="card-body" style="background-color:#1e1d39">
+                                            <h4 class="card-title"><span class="text-success">Payroll Components</span></h4>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Basic : 35000</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> House Rent Allowance : 12000</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span>Statutory Bonus : 7000</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Misc Allowance : 2000</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Internet Reimbursement : -</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Training Reimbursement : -</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <mat-divider></mat-divider>
+                                            <br>
+                                            <div class = "row">
+                                                
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"></span>Leave Travel Allowance Reimbursement : 12000 </p>
+                                                       
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"></span>Employee PF : 6000 </p>
+                                                       
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="row">
+                                               
+                                                <div class="col-md-3">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> NPS : 2000</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Gratuity : 2400</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-3">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Total (PM) : 57000</p>
+                                                    
+                                 
+                                                </div>
+                                              
+                                       
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Annual (BASE Salary) : 45000</p>
+                                                    
+                                 
+                                                </div>
+                                               
+                                                <div class="col-md-4">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Fixed component (PM) : 18000</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Annual Fixed  : 14 LPA</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                            <div class="row">
+                                               
+                                                <div class="col-md-6">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Annual Variable : 2 LPA</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Annual Non Cash Component : 17 LPA</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                            <div class="row">
+                                               
+                                                <div class="col-md-4">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Total Annual BASE : 10 LPA</p>
+                                                    
+                                 
+                                                </div>
+                                              
+                                       
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="card-footer" style="background-color:#c2185B">
+                                            <div class="stats">
+                                                <i class="material-icons">access_time</i> updated 4 minutes ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" [ngClass]="{'active': id === '3'}" id="settings">
+                            <div class="row"  style="overflow: auto;
+                            ">
+                                <div class="col-md-12">
+                                    <div class="card card-chart">
+                                        <div class="card-header card-header-success" style="background-color: lightgrey">
+                                            <button mat-fab color="primary" a routerLink="/personaldata" aria-label="Example icon button with a home icon">
+                                                <mat-icon>add</mat-icon>
+                                              </button>
+                                            <div class="ct-chart" id="dailySalesChart"></div>
+                                        </div>
+                                        <div class="card-body" style="background-color:#1e1d39">
+                                            <h4 class="card-title"><span class="text-success">Bank Data</span></h4>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Name as per Bank : Eason Sam</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span>Name of the Bank : HDFC </p>
+                                                    
+                                 
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span>Account Number : 65812447</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> IFSC CODE : HDFC1180kl</p>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="card-footer" style="background-color:#c2185B">
+                                            <div class="stats">
+                                                <i class="material-icons">access_time</i> updated 4 minutes ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" [ngClass]="{'active': id === '4'}" id="job">
+                            <div class="row"  style="overflow: auto;
+                            ">
+                                <div class="col-md-12">
+                                    <div class="card card-chart">
+                                        <div class="card-header card-header-success" style="background-color: lightgrey">
+                                            <button mat-fab color="primary" a routerLink="/personaldata" aria-label="Example icon button with a home icon">
+                                                <mat-icon>add</mat-icon>
+                                              </button>
+                                            <div class="ct-chart" id="dailySalesChart"></div>
+                                        </div>
+                                        <div class="card-body" style="background-color:#1e1d39">
+                                            <h4 class="card-title"><span class="text-success">Job Data</span></h4>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Designation : Senior Manager II</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Job Title : Tech Arch</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span>Grade : L1</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Department : FFIO</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Cost Center : Washington</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Profit Centre : Boston</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <div class = "row">
+                                                
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> Work Location</span> </p>
+                                                       
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="row">
+                                               
+                                                <div class="col-md-6">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Employee Work Location : bangalore</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Employee Work Location City : Bangalore</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                            <div class="row">
+                                               
+                                                <div class="col-md-6">
+                                                    
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Employee Work Location State/Province : Karnataka</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Employee Work Location Country: India</p>
+                                                    
+                                 
+                                                </div>
+                                       
+                                                
+                                            </div>
+                                           
+                                         
+                                            
+                                        </div>
+                                        <div class="card-footer" style="background-color:#c2185B">
+                                            <div class="stats">
+                                                <i class="material-icons">access_time</i> updated 4 minutes ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="master">
+                            <div class="row"  style="overflow: auto;
+                            ">
+                                <div class="col-md-12">
+                                    <div class="card card-chart">
+                                        <div class="card-header card-header-success" style="background-color: lightgrey">
+                                            <button mat-fab color="primary" aria-label="Example icon button with a home icon">
+                                                <mat-icon>add</mat-icon>
+                                              </button>
+                                            <div class="ct-chart" id="dailySalesChart"></div>
+                                        </div>
+                                        <div class="card-body" style="background-color:#1e1d39">
+                                            <h4 class="card-title"><span class="text-success">ID Master</span></h4>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> Adhar number :4007 5264 7894 </p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> PAN : EESL9854</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span>UAN : UA12890OP</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> PRAN  : PR1280000KL</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> PF Number : PPF103338777</p>
+                                                    
+                                 
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="card-category">
+                                                        <span class="text-success"> <mat-icon>calendar_today</mat-icon></span> ESIC Number : ES47000155</p>
+                                                    
+                                 
+                                                </div>
+                                                
+                                            </div>
+                                          
+                                        
+                                         
+                                            
+                                        </div>
+                                        <div class="card-footer" style="background-color:#c2185B">
+                                            <div class="stats">
+                                                <i class="material-icons">access_time</i> updated 4 minutes ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </mat-card></div>
+    </div>
+      
+
+  
+  
+  </form>
+</div>
+</div>
+</div>
+
+
+
+ 
+

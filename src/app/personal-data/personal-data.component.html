@@ -1,0 +1,128 @@
+<app-dashboard-header></app-dashboard-header>
+
+
+<div class="container" style="margin-left:180px;margin-right:89px;background-color:#1e1d39;;">
+  <div style="margin-top:30px;">
+  
+   
+    <section>
+      <div class="example-label"><div class="example-button-row">
+        <div class="example-flex-container">
+          <div class="example-button-container">
+            <button mat-fab color="primary" aria-label="Example icon button with a home icon">
+              <mat-icon>account_balance_wallet</mat-icon>
+            </button>
+          </div></div>
+        </div>
+      </div>
+    </section>
+      <mat-card-actions align="start">
+       
+        <span class="med-spacer"></span>
+        <span matTooltip="Search">
+          <mat-icon color="primary"  svgIcon="search"></mat-icon>
+        </span>
+        <span class="small-spacer"></span>
+        <span matTooltip="Show Recent Results">
+          <mat-icon color="primary"  svgIcon="cached"></mat-icon>
+        </span>
+      </mat-card-actions>
+     
+
+<!-- edit mode -->
+<form  class="normal-form">
+  <mat-grid-list cols="4" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden">
+        <mat-form-field>
+          <input  matInput placeholder="Employee Id*">
+          <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Employee DOJ">
+          <mat-error>Invalid email address.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Middle Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Last Name">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden">
+        <mat-form-field>
+          <input  matInput placeholder="First Name">
+          <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Employee DOJ">
+          <mat-error>Invalid email address.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Middle Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Last Name">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden">
+        <mat-form-field>
+          <input  matInput placeholder="Employee Id*">
+          <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Employee DOJ">
+          <mat-error>Invalid email address.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input  matInput placeholder="Middle Name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select  placeholder="Department">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let department of departments">
+              <mat-option value="{{department.id}}">{{department.value}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+ 
+    <mat-grid-tile>
+      <div class="controles-container">
+        <mat-radio-group >
+          <mat-radio-button class="radio-label" value="1">Male</mat-radio-button>
+          <mat-radio-button class="radio-label" value="2">Female</mat-radio-button>
+          <mat-radio-button class="radio-label" value="3">Other</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field>
+          <mat-select  placeholder="Department">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let department of departments">
+              <mat-option value="{{department.id}}">{{department.value}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <div class="add-bottom-padding">
+          <mat-form-field>
+            <input  matInput placeholder="City">
+          </mat-form-field>
+        </div>
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit" >Submit</button>
+          <button mat-raised-button color="warn" >Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
+</form>
+</div>
+</div>

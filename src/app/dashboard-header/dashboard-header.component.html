@@ -1,0 +1,46 @@
+<mat-toolbar color="purple">
+  <img
+  class="logo"
+  src="../../assets/images/Logo.svg"
+  alt="Asari Logo"
+/>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>account_balance_wallet</mat-icon>
+    </button>
+    <span style="font-size:medium;">Payroll</span>
+
+   
+   
+    <span class="example-spacer"></span>
+    <mat-form-field appearance="fill">
+      <mat-label>Country</mat-label>
+      <mat-select>
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <span class="example-spacer1" ></span>
+    <span class="example-spacer1" ></span>
+    <mat-form-field appearance="fill">
+      <mat-label>Select Legal Entity</mat-label>
+      <select matNativeControl id="mySelectId">
+        <option value="" disabled selected></option>
+        <option value="">SHR</option>
+        <option value="saab">Benefits</option>
+        <option value="mercedes">Paygroup</option>
+        <option value="audi">BGV</option>
+      </select>
+    </mat-form-field>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="/landing">
+      <mat-icon>apps</mat-icon>
+    </button>
+   
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="/payroll">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>credit_card</mat-icon>
+    </button>
+  </mat-toolbar>
+ 
+  <app-footer></app-footer>
